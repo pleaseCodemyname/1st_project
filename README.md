@@ -80,7 +80,7 @@
 ## 화면 구성 📺
 | 메인 페이지  |  관리자 페이지   |
 | :-------------------------------------------: | :------------: |
-|  <img width="329" src="/1st_project/1st_project_main_page.png"/> |  <img width="329" src="/1st_project/1st_project_admin_page.png"/>|  
+|  <img width="329" src="[/1st_project/1st_project_main_page.png](https://github.com/pleaseCodemyname/1st_project/blob/main/1st_project_admin_page.png)"/> |  <img width="329" src="/1st_project/1st_project_admin_page.png"/>|  
 | 관리자 페이지2   |  사용자 페이지   |  
 | <img width="329" src="/1st_project/1st_project_admin_page2.png"/>   |  <img width="329" src="/1st_project/1st_project_user_page.png"/>     |
 
