@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title style>고객정보 테이블</title>
+    <title style>세차장 정보</title>
     <link type="text/css" rel="stylesheet" href="mystyle.css"> 
     <script> 
     let id ="";
@@ -30,7 +30,7 @@
       alert(`${id}님 환영합니다.`);
     }
   }  
-function sessionRemove() {
+    function sessionRemove() {
       id = getParameter("id");
       sessionStorage.removeItem(id);
       alert(`사용자 ${id}님 로그아웃 하셨습니다.`);
@@ -38,7 +38,7 @@ function sessionRemove() {
   }
   </script>
   </head>
-  <body onload = "sessionStore">
+  <body onload="sessionStore">
     <style>
       #menubar {
         background: #7575e4;
@@ -50,7 +50,6 @@ function sessionRemove() {
         padding: 0;
         width: 100%;
       }
-    
       #menubar ul li {
         display: inline-block;
         list-style-type: none;
@@ -68,18 +67,14 @@ function sessionRemove() {
       }
     
       h3 {
-        color: rgb(7, 34, 67);
+        color: black;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-size: 25px;
         font-weight: bold;
       }
-      form {
-        font-size: 20px; /* Adjust the overall font size of the form */
-      }
-      form input[type="text"],
-      form input[type="password"] {
-        height: 25px; /* Set the height for text inputs */
-        font-size: 20px;
+      form input[type="text"]{
+        height: 20px; /* Set the height for text inputs */
+        font-size: 15px;
       }
       /* 버튼 스타일 추가 */
       input[type="button"],
@@ -95,34 +90,46 @@ function sessionRemove() {
         margin-right: 10px; /* 각 버튼 간격 조절 */
       }
       </style>
-      </body>
-      <body>
-  <nav id="menubar">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li style="float: right;"><a href="index.html" onclick="sessionRemove()">Logout</a></li><br><br>
-      <li><a href="member.html">고객정보</a></li>
-      <li><a href="carWash.html">세차장 정보</a></li>
-    </ul>
-  </nav><br><br> 
-</body>
-<body>
-    <form action="/user/add" target="targetURL" name="userForm" method="post">
-      <p>id : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text"  name="id" /></p>
-      <p>pwd : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="password"  name="pwd" /></p>
-      <p>address : &nbsp;&nbsp;&nbsp;<input type="text"  name="address" /></p>
-      <p>latitude : &nbsp; <input type="text"  name="latitude" /></p>
-      <p>longitude : &nbsp;<input type="text"  name="longitude" /></p>
-      <input type="button" value="회원 조회" onclick='document.targetURL.location.href="/user/select"'/>
-      <input type="button" value="특정 회원 조회" onclick='document.targetURL.location.href="/user/selectQuery?id="+document.userForm.id.value'/>
-      <button type="submit" formaction="/user/add" onclick='document.targetURL.location.href="/user/add"'/>사용자 추가</button>
-      <button type="submit" formaction="/user/update">회원 정보 수정</button>
-      <button type="submit" formaction="/user/delete">회원 삭제</button>
+      <nav id="menubar">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li style="float: right;"><a href="index.html" onclick="sessionRemove()">Logout</a></li><br><br>
+              <li><a href="member.html">고객정보</a></li>
+              <li><a href="carWash.html">세차장 정보</a></li>
+          </ul>
+      </nav><br><br> 
+  </body>
+  <body>
+    <form action="/carWash/add" target="targetURL" name="carWashForm" method="post">
+      <p>store_name : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="store_name" /></p>
+      <p>gu : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="gu" /></p>
+      <p>type_of_business : <input type="text" name="type_of_business" /></p>
+      <p>carwash_type : &nbsp;&nbsp;&nbsp; <input type="text" name="carwash_type" /></p>
+      <p>address : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="address" /></p>
+      <p>start_work : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="start_work" /></p>
+      <p>end_work : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="end_work" /></p>
+      <p>tel_no : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tel_no" /></p>
+      <p>latitude : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="latitude" /></p>
+      <p>longitude : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="longitude" /></p>
+      <input type="button" class="search" value="세차장 전부 조회" onclick='document.targetURL.location.href="/carWash/select"' />
+      <button type="submit" formaction="/carWash/add">세차장 추가</button>
+      <button type="submit" foraction="/carWash/update">세차장 정보 수정</button>
+      <button type="submit" formaction="/carWash/delete">세차장 정보 삭제</button>
     </form>
-    <hr/>
-    <body onload="sessionStore()">
-    <iframe name="targetURL" width="100%" height="500" style="border: none" src="/hello"></iframe>
+    <script>
+    </script>
+  <body onload="sessionStore()">
+    
+    <hr />
+    <iframe
+      name="targetURL"
+      width="100%"
+      height="500"
+      style="border: none"
+      src="/hello"
+    ></iframe>
   </body>
 </html>
+
 
 
