@@ -137,9 +137,9 @@
         <form action="/insert" target="targetURL" name="userForm" method="post">
             <label for="carWashFind">세차장 조회 :</label>
             <input id="carWashFind" type="text" size="15" name="gu" />
-            <button type="button" class="search" onclick='document.targetURL.location.href="/carWash/selectQuery?gu="+document.userForm.gu.value'>&nbsp;검색</button>
             <br><br>
             <input type="button" class="search" value="세차장 전부 조회" onclick='document.targetURL.location.href="/carWash/select"' />
+            <input type="button" class="search" value="지역 별 세차장 전부 조회" onclick='document.targetURL.location.href="/carWash/selectQuery?gu="+document.userForm.gu.value'></button>
             <input type="button" class="search" value="세차장 인근 조회" onclick='getUserIDAndNavigate()' />
         </form>
     </div>
