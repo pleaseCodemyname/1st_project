@@ -48,8 +48,8 @@
 - CRUD 기능을 활용한 웹 서비스 구현
 <br/>
 
-### ✔ 아키텍처
-![그림1](https://github.com/westmini427/Weatherdata-project/assets/127065150/6b3d2858-e1bf-42b2-afb0-6cea4c588564)
+### ✔ 시스템 아키텍처
+![그림1][(https://github.com/westmini427/Weatherdata-project/assets/127065150/6b3d2858-e1bf-42b2-afb0-6cea4c588564)](https://github.com/pleaseCodemyname/1st_project/blob/main/system_architecture.png)
 
 <br/>
 
@@ -61,21 +61,6 @@
 
 - 고객의 위치를 바탕으로 인근에 위치한 세차장 10곳을 추천하는 서비스.
 <br/>
-
-<!-- ### ✔ 개발 과정
-![그림1](https://github.com/westmini427/Weatherdata-project/assets/127065150/e7d9930c-1990-41d8-b819-3d2259dc827a)
-
-- 데이터베이스 설계와 API 명세서를 설정 후, 이를 토대로 개발을 진행했습니다. -->
-
-<br/>
-
-<!-- ### ✔ 초기 화면 구성
-![Alt text](wireframe.png) -->
-
-<br/>
-
-<!-- ### ✔ 실행 화면
-![Alt text](%EB%A9%94%EC%9D%B4%EC%9B%A8%EB%8D%94.gif) -->
 
 ## 화면 구성 📺
 | 메인 페이지  |  관리자 페이지   |
@@ -94,64 +79,3 @@
 ### ⭐️ 기본에 충실한 CRUD 기능
 - 사용자의 정보를 생성, 조회, 수정, 삭제 할 수 있는 관리자 페이지 기능
 ---
-<!-- ## 아키텍쳐
-
-### 디렉토리 구조
-```bash
-├── README.md
-├── package-lock.json
-├── package.json
-├── strapi-backend : 
-│   ├── README.md
-│   ├── api : db model, api 관련 정보 폴더
-│   │   ├── about
-│   │   ├── course
-│   │   └── lecture
-│   ├── config : 서버, 데이터베이스 관련 정보 폴더
-│   │   ├── database.js
-│   │   ├── env : 배포 환경(NODE_ENV = production) 일 때 설정 정보 폴더
-│   │   ├── functions : 프로젝트에서 실행되는 함수 관련 정보 폴더
-│   │   └── server.js
-│   ├── extensions
-│   │   └── users-permissions : 권한 정보
-│   ├── favicon.ico
-│   ├── package-lock.json
-│   ├── package.json
-│   └── public
-│       ├── robots.txt
-│       └── uploads : 강의 별 사진
-└── voluntain-app : 프론트엔드
-    ├── README.md
-    ├── components
-    │   ├── CourseCard.js
-    │   ├── Footer.js
-    │   ├── LectureCards.js
-    │   ├── MainBanner.js : 메인 페이지에 있는 남색 배너 컴포넌트, 커뮤니티 이름과 슬로건을 포함.
-    │   ├── MainCard.js
-    │   ├── MainCookieCard.js
-    │   ├── NavigationBar.js : 네비게이션 바 컴포넌트, _app.js에서 공통으로 전체 페이지에 포함됨.
-    │   ├── RecentLecture.js
-    │   └── useWindowSize.js
-    ├── config
-    │   └── next.config.js
-    ├── lib
-    │   ├── context.js
-    │   └── ga
-    ├── next.config.js
-    ├── package-lock.json
-    ├── package.json
-    ├── pages
-    │   ├── _app.js
-    │   ├── _document.js
-    │   ├── about.js
-    │   ├── course
-    │   ├── index.js
-    │   ├── lecture
-    │   ├── newcourse
-    │   ├── question.js
-    │   └── setting.js
-    ├── public
-    │   ├── favicon.ico
-    │   └── logo_about.png
-    └── styles
-        └── Home.module.css -->
