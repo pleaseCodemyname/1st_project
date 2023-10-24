@@ -49,7 +49,7 @@
 <br/>
 
 ### ✔ 시스템 아키텍처
-![그림1][(https://github.com/westmini427/Weatherdata-project/assets/127065150/6b3d2858-e1bf-42b2-afb0-6cea4c588564)](https://github.com/pleaseCodemyname/1st_project/blob/main/system_architecture.png)
+![그림1][(https://github.com/pleaseCodemyname/1st_project/blob/main/system_architecture.png)]
 
 <br/>
 
