@@ -38,8 +38,7 @@
 
 - 팀명 : 수료가목표
 - 인원 : 2인 [ 윤상현, 이효빈 ]
-- 기간 : 4일 [ 2023.04.24.(월) ~ 2023.04.27.(목) ]
-- 문서 : Wireframe, Table configuration, API report, Architecture
+- 기간 : 4일 [ 2023.04 ~ 2023.05]
 
 <br/>
 
@@ -49,7 +48,7 @@
 <br/>
 
 ### ✔ 시스템 아키텍처
-![그림1][(https://github.com/pleaseCodemyname/1st_project/blob/main/system_architecture.png)]
+![그림1](https://github.com/pleaseCodemyname/1st_project/blob/main/system_architecture.png)
 
 <br/>
 
